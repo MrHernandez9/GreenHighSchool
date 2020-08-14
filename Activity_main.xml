@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phptp"
+    android:padding="20px"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miguel Angel Hernandez - 18-EISN-3-007"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="184dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginEnd="122dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="120dp"
+        tools:srcCompat="@drawable/photo4978883418926459005" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="237dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="87dp"
+        android:background="@drawable/boton"
+        android:backgroundTint="@android:color/background_light"
+        android:text="¿Olvido su contraseña?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="577dp" />
+
+    <Button
+        android:id="@+id/btiniciosesion"
+        android:layout_width="147dp"
+        android:layout_height="38dp"
+        android:background="@drawable/boton"
+        android:backgroundTint="@android:color/background_light"
+        android:text="Iniciar Sesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="495dp" />
+
+    <TextView
+        android:id="@+id/etusuario"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/boton"
+        android:backgroundTint="@android:color/background_light"
+        android:text="Usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/etcontraseña"
+        android:layout_width="149dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/boton"
+        android:backgroundTint="@android:color/background_light"
+        android:text="Contraseña "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etusuario" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
