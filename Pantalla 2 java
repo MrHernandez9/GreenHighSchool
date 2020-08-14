@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+
+import static android.R.layout.simple_list_item_1;
+
+public class Pantalla02 extends AppCompatActivity {
+    ListView ListView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_pantalla02);
+        ListView = (ListView) findViewById(R.id.listview);
+        final ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add("Trae Young");
+        arrayList.add("Luka Doncic");
+        arrayList.add("Kyrie Williamson");
+        arrayList.add("J.a Morat");
+        arrayList.add("LeBron Raymond James");
+        ArrayAdapter arrayAdapter = new ArrayAdapter(this, simple_list_item_1, arrayList);
+        ListView.setAdapter(arrayAdapter);
+
+        ListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(Pantalla02.this, "HICISTE CLICK EN ESTE ELEMENTO:" + i + " " + arrayList.get(i).toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+    }
+
+}
